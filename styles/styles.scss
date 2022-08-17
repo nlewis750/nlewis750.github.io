@@ -1,5 +1,233 @@
 @import "paragon.scss";
 
-div{
-  color: #ddd;
+// VARIABLES
+$trqse: #3fbebb;
+$prpl: #9F8FCA;
+$white: #fff;
+
+// MIXINS
+
+@mixin background-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin treat_box{
+    display: flex;
+    flex-grow: 1;
+    height: 300px;
+    max-width: 375px;
+    border-radius: 5px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@mixin treat_description{
+    background-color: $prpl;
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px; 
+    h4, h6 {
+        color: $white;
+    }
+}
+
+@mixin flex-row-around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.new-header, .new-header::after{
+    justify-content: space-between !important;
+    margin: 0 !important;
+    height: 80px !important;
+    max-width: none;
+    max-height: 80px;
+    padding: 0 50px;
+}
+
+.sk-logo{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.lemon-hero{
+    background-image: url(../images/lemonbars.jpeg);
+    @include background-img;
+    background-position:center bottom; 
+    height: 500px;
+    padding-right: 50px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.title_description{
+    background-color: rgba($color: $trqse, $alpha: .85);
+    border-radius: 0 25px 25px 0;
+    padding: 50px;
+    h1{
+        font-size: 46px;
+        color: $white;
+    }
+    h4{
+        margin-bottom: 5px;
+    }
+}
+
+.ingredients{
+    padding: 0 50px;
+    .button{
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.ingredient_lists{
+    display: flex;
+    flex-direction: row;
+}
+
+.cake_ingredients, .glaze_ingredients{
+    flex-grow: 1;
+}
+
+.recipe{
+    padding: 30px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        color: darken($trqse, 10%);
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.recipe_container{
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 776px){
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.recipe_steps{
+    flex-grow: 1;
+    // .li{
+    //     align-items: center;
+    // }
+}
+
+.recipe_image{
+    img{
+        border-radius: 50%;
+        border: 5px solid $trqse;
+        // transform: scale(80%);
+        width: 300px;
+    }
+flex-grow: 1;
+display: flex;
+justify-content: center;
+}
+
+.ordered-list--custom.ordered-list--color-blue li::before{
+    background-color: $prpl !important;
+}
+
+.more_treats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    background-color: $white;
+    padding: 25px 50px;
+    h3{
+        color: darken($trqse, 10%);
+    }
+    .dashing-icon--arrow-left{
+        width: 16px;
+    }
+}
+
+.treat_carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 300px;
+    gap: 20px;
+}
+
+.treat_one{
+    @include treat_box;
+    @include background-img;
+    background-image: url(../images/beanbrownies.jpeg);
+    background-position: center;
+}
+
+.treat_two{
+    @include treat_box;
+    @include background-img;
+    background-image: url(../images/oatmeal-cookies.jpeg);
+    background-position: center;
+    @media (max-width: 550px){
+        display: none;
+    }
+}
+
+.treat_three{
+    @include treat_box;
+    @include background-img;
+    background-image: url(../images/chocolate-cake.jpeg);
+    background-position: center;
+    @media (max-width: 776px){
+        display: none;
+    }
+}
+
+.treat_description{
+    @include treat_description;
+}
+
+.lemon_footer{
+    background-color: $trqse;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    padding: 50px;
+}
+
+.footer-nav{
+    @include flex-row-around;
+    width: 100%;
+    align-items: center;
+    h4{
+        color: $white;
+    }
+    @media (max-width: 550px){
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-between;
+    }
+}
+
+.footer-nav-links{
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    li{
+       margin: .3rem !important;
+       font-weight: 600;
+    }
+    @media (max-width: 550px){
+        flex-direction: row;
+        gap: 20px;
+    }
 }

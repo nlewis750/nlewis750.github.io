@@ -6100,7 +6100,193 @@ body.has-footer .content {
   font-family: 'dashing-icons';
   src: url("https://assets.smchcn.net/dashing-icons.woff") format("woff"); }
 /*# sourceMappingURL=paragon.css.map */
-div {
-  color: #ddd; }
+.new-header, .new-header::after {
+  justify-content: space-between !important;
+  margin: 0 !important;
+  height: 80px !important;
+  max-width: none;
+  max-height: 80px;
+  padding: 0 50px; }
+
+.sk-logo {
+  height: 50px;
+  display: flex;
+  align-items: center; }
+
+.lemon-hero {
+  background-image: url(../images/lemonbars.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 500px;
+  padding-right: 50px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center; }
+
+.title_description {
+  background-color: rgba(63, 190, 187, 0.85);
+  border-radius: 0 25px 25px 0;
+  padding: 50px; }
+  .title_description h1 {
+    font-size: 46px;
+    color: #fff; }
+  .title_description h4 {
+    margin-bottom: 5px; }
+
+.ingredients {
+  padding: 0 50px; }
+  .ingredients .button {
+    margin-left: 1rem;
+    margin-bottom: 1rem; }
+
+.ingredient_lists {
+  display: flex;
+  flex-direction: row; }
+
+.cake_ingredients, .glaze_ingredients {
+  flex-grow: 1; }
+
+.recipe {
+  padding: 30px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .recipe h2 {
+    color: #329895;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row; }
+
+.recipe_container {
+  display: flex;
+  flex-direction: row; }
+  @media (max-width: 776px) {
+    .recipe_container {
+      flex-direction: column;
+      gap: 30px; } }
+
+.recipe_steps {
+  flex-grow: 1; }
+
+.recipe_image {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center; }
+  .recipe_image img {
+    border-radius: 50%;
+    border: 5px solid #3fbebb;
+    width: 300px; }
+
+.ordered-list--custom.ordered-list--color-blue li::before {
+  background-color: #9F8FCA !important; }
+
+.more_treats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  background-color: #fff;
+  padding: 25px 50px; }
+  .more_treats h3 {
+    color: #329895; }
+  .more_treats .dashing-icon--arrow-left {
+    width: 16px; }
+
+.treat_carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 300px;
+  gap: 20px; }
+
+.treat_one {
+  display: flex;
+  flex-grow: 1;
+  height: 300px;
+  max-width: 375px;
+  border-radius: 5px;
+  align-items: flex-end;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/beanbrownies.jpeg);
+  background-position: center; }
+
+.treat_two {
+  display: flex;
+  flex-grow: 1;
+  height: 300px;
+  max-width: 375px;
+  border-radius: 5px;
+  align-items: flex-end;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/oatmeal-cookies.jpeg);
+  background-position: center; }
+  @media (max-width: 550px) {
+    .treat_two {
+      display: none; } }
+
+.treat_three {
+  display: flex;
+  flex-grow: 1;
+  height: 300px;
+  max-width: 375px;
+  border-radius: 5px;
+  align-items: flex-end;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/chocolate-cake.jpeg);
+  background-position: center; }
+  @media (max-width: 776px) {
+    .treat_three {
+      display: none; } }
+
+.treat_description {
+  background-color: #9F8FCA;
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 0px 0px 5px 5px; }
+  .treat_description h4, .treat_description h6 {
+    color: #fff; }
+
+.lemon_footer {
+  background-color: #3fbebb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px; }
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center; }
+  .footer-nav h4 {
+    color: #fff; }
+  @media (max-width: 550px) {
+    .footer-nav {
+      flex-direction: column;
+      gap: 30px;
+      justify-content: space-between; } }
+
+.footer-nav-links {
+  display: flex;
+  flex-direction: column;
+  color: #fff; }
+  .footer-nav-links li {
+    margin: .3rem !important;
+    font-weight: 600; }
+  @media (max-width: 550px) {
+    .footer-nav-links {
+      flex-direction: row;
+      gap: 20px; } }
 
 /*# sourceMappingURL=styles.css.map */
