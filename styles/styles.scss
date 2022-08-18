@@ -86,6 +86,10 @@ $white: #fff;
     }
 }
 
+.ingredient_card{
+    max-width: 1200px;
+}
+
 .ingredient_lists{
     display: flex;
     flex-direction: row;
@@ -98,7 +102,6 @@ $white: #fff;
 .recipe{
     padding: 30px 50px 50px 50px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     h2{
         color: darken($trqse, 10%);
@@ -109,6 +112,14 @@ $white: #fff;
 }
 
 .recipe_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.recipe_steps_container{
     display: flex;
     flex-direction: row;
     @media (max-width: 776px){
@@ -142,10 +153,7 @@ justify-content: center;
 
 .more_treats{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    gap: 20px;
     background-color: $white;
     padding: 25px 50px;
     h3{
@@ -154,6 +162,16 @@ justify-content: center;
     .dashing-icon--arrow-left{
         width: 16px;
     }
+}
+
+.more_treats_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px; 
+    max-width: 1200px;
+    width: 100%;
 }
 
 .treat_carousel{
